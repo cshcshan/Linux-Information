@@ -1,0 +1,5 @@
+CensOS command
+echo $HOME            則顯示/root
+echo $PATH            則顯示環境變數path
+source                則讀入環境設定檔的指令
+cat ~/.bash_profile   則顯示~/.bash_profile這個檔案的內容
