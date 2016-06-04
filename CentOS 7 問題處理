@@ -5,6 +5,9 @@ Cannot find a valid baseurl for repo: base/7/x86_64
 [Solve]
 # dhclient
 
+資料來源：
+http://stackoverflow.com/questions/30424860/yum-error-centos-7-1-x86-64
+
 [Q]
 firewall-cmd: command not found
 [Solve]
@@ -17,7 +20,7 @@ systemctl start firewalld
 [Q]
 ifconfig
 [Solve]
-yum install net-toole.x84_64
+yum install net-tools.x84_64
 
 資料來源：
-http://stackoverflow.com/questions/30424860/yum-error-centos-7-1-x86-64
+http://note.tc.edu.tw/931.html

@@ -18,6 +18,7 @@ Rbenv is a ruby version management tool. We will use this to install and manage 
 # source ~/.bash_profile
 
 2.  Open new terminal
+# exit
 
 3.  Installation of Ruby
 # rbenv install -v 2.2.1

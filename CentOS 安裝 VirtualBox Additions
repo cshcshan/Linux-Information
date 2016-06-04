@@ -1,0 +1,20 @@
+CentOS 安裝 VirtualBox Additions
+
+1. Insert Guest Additions CD image...
+2. root身份
+# mount /dev/cdrom /media/cdrom        掛載
+# cd /media/cdrom
+# ./VBoxLinuxAdditions.run             執行
+3. Shared Folders
+# ls /media/                           若有cdrom和sf_xxx(sf_Public)就成功
+# ls /media/sf_xxx
+4. 掛載 Shared Folders
+# mount -t vboxsf Public /home/han/Public
+5. 開機自動掛載
+# sudo usermod -aG vboxsf root
+# sudo usermod -aG vboxsf han
+# ls /media/sf_Public
+
+資料來源：
+https://dinos80152.wordpress.com/2015/03/15/windows-上共用資料夾shared-folder至-virtualbox-linux-設定與自動掛載/
+http://www.makebizeasy.com/article/167824.html

@@ -1,0 +1,7 @@
+Ubuntu 環境設定
+
+設定 root 密碼
+$ sudo passwd root
+
+更新套件
+# sudo apt-get update

@@ -1,5 +1,14 @@
 CensOS command
-echo $HOME            則顯示/root
-echo $PATH            則顯示環境變數path
-source                則讀入環境設定檔的指令
-cat ~/.bash_profile   則顯示~/.bash_profile這個檔案的內容
+# echo $HOME            則顯示/root
+# echo $PATH            則顯示環境變數path
+# source                則讀入環境設定檔的指令
+# cat ~/.bash_profile   則顯示~/.bash_profile這個檔案的內容
+# exit                  則登出 = ctrl+d
+# shutdown now          則關機
+# shutdown -r           則重新開機 = #reboot
+# pwd                   則顯示目前資料夾路徑
+shift+Page Up/Page Down 則切換上一頁或下一頁 = shift+fn+Up/Down
+shift+Up/Down           則切換上一行或下一行
+# cp -rf 來源路徑 目的路徑  則將來源路徑下所有檔案複製到目的路徑。-r表示包含子資料夾
+# cp -rf /media/sf_Public/Deta-api/. ~/DetaApi
+# sudo rm -r -f /path/  則刪除/path/資料夾。-r表示包含子資料夾、-f表示force
