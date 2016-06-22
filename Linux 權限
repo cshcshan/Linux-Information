@@ -1,0 +1,25 @@
+Linux 權限
+基本權限有9個，分別是owner(user)/group/others三種身份，他們都有各自的read/write/execute，-rwxrwxrwx
+各權限分數表如下：r: 4, w: 2, x: 1
+每種身份(owner/group/others)各自的三種權限分數是累加的
+例如當權限為[-rwxrwx---]
+  owner = rwx = 4 + 2 + 1 = 7
+  group = rwx = 4 + 2 + 1 = 7
+  others = --- = 0 + 0 + 0 = 0
+
+# chmod [-R] xyz 檔案或目錄名稱      則修改檔案或目錄的權限 -R進行遞迴，表示所有子孫目錄都會修改
+例如
+# chmod 777 xxx.jpg	               則將xxx.jpg權限設定為-rwxrwxrwx
+# chmod 754 xxx.jpg	               則將xxx.jpg權限設定為-rwxr-xr--
+
+# chmod [u/g/o/a][+/-/=][r/w/x] 檔案或目錄名稱
+  u = user
+  g = group
+  o = others
+  a = all
+  + = 加入
+  - = 除去
+  = = 設定
+例如
+# chmod u=rwx,go=rx xxx.jpg        則將xxx.jpg權限設定為-rwxr-xr-x
+# chmod u+x xxx.command            則將xxx.command的使用者增加execute權限
